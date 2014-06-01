@@ -1,6 +1,6 @@
 /*
 Home Page: http://d3js.org/
-LICENSE: https://github.com/mbostock/d3/blob/master/LICENSE
+LICENSE: https://github.com/mbostock/d3/blob/v3.4.5/LICENSE
  */
 !function() {
   var d3 = {
