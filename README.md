@@ -1,4 +1,4 @@
-# Laravel Blog tutorial
+# Polling Application Using AngularJS and Laravel
 
 This repository contains the source code for the tutorial I have written on [codeheaps.com](http://www.codeheaps.com).
 
