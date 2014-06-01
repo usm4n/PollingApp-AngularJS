@@ -1,0 +1,9 @@
+<h1>Polls</h1>
+<poll-alert show-alert="alert.showAlert" alert-class="alert.alertClass" alert-message="alert.msg"></poll-alert>
+<div class="list-group">
+    <a class="list-group-item" ng-repeat="poll in polls" ng-href="#/view/{{poll.id}}">{{poll.question}}</a>
+    <a class="btn btn-success btn-block" ng-show="dataAvailable" ng-click="loadPolls()">Load more polls</a>
+    <div class="alert alert-danger" ng-hide="dataAvailable">
+        <p>No More Data to Load :(</p>
+    </div>
+</div>

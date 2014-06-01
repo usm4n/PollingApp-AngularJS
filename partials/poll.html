@@ -1,0 +1,17 @@
+<div>
+    <h1>{{poll.question}}</h1>
+    <poll-alert show-alert="alert.showAlert" alert-class="alert.alertClass" alert-message="alert.msg"></poll-alert>
+    <form ng-submit="save()">
+        <ul class="list-group">
+            <li ng-repeat="value in poll.options" class="list-group-item">
+                <input type="radio" id="option{{$index}}" value="{{value}}" name="option" ng-model="poll.option">
+                <label for="option{{$index}}">{{value}}</label>
+            </li>
+        </ul>
+        <div class="text-center">
+            <a class="btn btn-danger" ng-href="#/"><span class="glyphicon glyphicon-arrow-left"> Back</span></a>
+            <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-save"> Save</span></button>
+            <a class="btn btn-info" ng-href="#/view/{{poll.id}}/stats"><span class="glyphicon glyphicon-stats"> Stats</span></span></a>
+        </div>
+    </form>
+</div>
