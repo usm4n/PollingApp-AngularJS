@@ -1,3 +1,8 @@
+/*
+  Repo: https://github.com/chinmaymk/angular-charts
+  LICENSE: https://github.com/chinmaymk/angular-charts/blob/master/LICENSE
+ */
+
 angular.module('angularCharts', ['angularChartsTemplates']);
 angular.module('angularCharts').directive('acChart', [
   '$templateCache',

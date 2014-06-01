@@ -1,3 +1,7 @@
+/*
+Home Page: http://d3js.org/
+LICENSE: https://github.com/mbostock/d3/blob/master/LICENSE
+ */
 !function() {
   var d3 = {
     version: "3.4.5"

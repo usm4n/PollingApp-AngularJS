@@ -1,3 +1,7 @@
+/*
+  Repo: https://github.com/chinmaymk/angular-charts
+  LICENSE: https://github.com/chinmaymk/angular-charts/blob/master/LICENSE
+ */
 angular.module('angularChartsTemplates', ['left']);
 
 angular.module("left", []).run(["$templateCache", function($templateCache) {
