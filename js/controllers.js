@@ -5,7 +5,7 @@ pollsApp.controller('IndexController', function ($scope, pollService) {
     var pageNumber = 1;
 
     $scope.loadPolls = function () {
-        pollService.getData('index', pageNumber).then(function (data) {
+        pollService.getData('polls', pageNumber).then(function (data) {
                 if (data.length < 5) {
                     $scope.dataAvailable = false;
                 }
@@ -27,7 +27,7 @@ pollsApp.controller('PollController', function ($scope, $routeParams, pollServic
     $scope.poll = {};
     $scope.alert = {showAlert: false, alertClass: 'success', msg: ''};
 
-    pollService.getData('show', $routeParams.id).then(function (data) {
+    pollService.getData('poll', $routeParams.id).then(function (data) {
             $scope.poll = data;
         },
         function (error) {
