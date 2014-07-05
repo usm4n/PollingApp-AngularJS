@@ -14,7 +14,7 @@ pollsApp.factory('pollService', function ($http, $q) {
             postData: function (id, data) {
                 var defer = $q.defer();
                 data = $.param(data);
-                $http.post('http://localhost:8000/api/poll/' + id, data,
+                $http.post('http://localhost:8000/api/poll/' + id + '/option', data,
                     {'headers': {
                         'Content-Type': 'application/x-www-form-urlencoded,charset=UTF-8'
                     }}).
